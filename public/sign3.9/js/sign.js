@@ -24,7 +24,7 @@ $(function(){
         }
 
         $.ajax({
-            url:"http://licai.gongshidai.com:88/v3_1/code",
+            url:"https://licai.gongshidai.com/v3_1/code",
             type:"post",
             data:{
                 type:'reg',
@@ -75,7 +75,7 @@ $(function(){
         data.pwd = pwd;
         data.code = writecode;
         data.phone = phoneNum;
-        data.channle = GetPhone("from");
+        data.channel = GetPhone("channel");
         $.ajax({
             url:"https://licai.gongshidai.com/v3_1/user",
             type:"post",
@@ -84,7 +84,12 @@ $(function(){
                 if(data.code ==0){
                     $("#error").html("注册成功!")
                     showDialog(error)
-                    window.location.href = ""
+                    if(isPhoneType()== "iphone"){
+                        window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.gongshidai.mistGSD"
+                    }else{
+                        window.location.href = ""
+                    }
+
                 }else if (data.code == 10011){
                     $("#error").html("验证码错误!");
                     showDialog(error);
