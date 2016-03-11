@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0,user-scalable=no">
+    <meta name="format-decoration" content="telephone=no">
+    <meta name="apple-mobile-web-appcapable" content="yes">
+    <title>女王节</title>
+    <link rel="stylesheet" href="css/womenday.css" type="text/css">
+    <script src="js/z.js"></script>
+    <script src="js/wxshare.min.js"></script>
+</head>
+<body>
+<div class="bgImg rules-relative" id="bgImg" data-type="">
+    <div class="phone-sign rules-ab" id="phone-sign" style="display: block">
+        <div class="phonebtn rules-relative">
+           <div class="closebtn rules-ab" id="close-btn">
+                <img src="img/phoneNum-close.png" alt="关闭按钮">
+            </div>
+            <img src="img/phoneNum.png" alt="输入手机号码"/>
+            <div class="inputbox rules-ab rules-in">
+                <input type="text" class="phone-text rules-center" id="phoneval" maxlength="11" placeholder="在这里输入手机号哦">
+                <input type="button" id="phone-strat">
+            </div>
+        </div>
+    </div>
+    <div class="titleImg">
+        <img src="img/title.png" alt="女王来袭,福利不停"/>
+    </div>
+    <!--修改处-->
+    <div class="conImg ">
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.gongshidai.mistGSD">
+            <div class="act-one rules-relative">
+                <img src="img/one.png"/>
+                <a class="rules-block rules-inp rules-ab rules-in">
+                    <img src="img/one-btn.png"/>
+                </a>
+            </div>
+        </a>
+        <div class="act-two rules-mtop rules-relative">
+            <img src="img/two.png"/>
+            <a href="javascript:void (0)" id="sharebtn" class="rules-block rules-inp rules-ab rules-in">
+                <img src="img/two-btn.png"/>
+            </a>
+        </div>
+        <div class="act-three rules-relative">
+            <img src="img/three-app.png"/>
+        </div>
+        <p class="rules-center">以上福利可同时享受 福利工作日当天发放</p>
+    </div>
+    <!--修改在上-->
+    <div class="endImg rules-relative">
+        <img src="img/the-end.png" alt="女王等你来袭"/>
+        <a href="#"><p class="rules-ab rules-in" id="Prank"> >>点击查看当前排名<< </p></a>
+    </div>
+    <div class="toprank rules-ab" id="toprank" style="display:none">
+        <div id="ranks">
+            <div class="rank-title rules-relative">
+                <div class="closebtn rules-ab" id="close-btn2">
+                    <img src="img/phoneNum-close.png" alt="关闭按钮">
+                </div>
+                <img src="img/rank-title.png" class="rank-t" alt="女王来袭">
+            </div>
+            <!--注册1-->
+            <div class="rank-sign rules-top5 rules-relative" id="sign1" data-opid="" style="display: block">
+                <img src="img/rank-sign.png" alt="注册">
+                <img src="img/rank-sign-con1.png" class="rules-ab rules-in rank-sign-con1"/>
+            </div>
+            <!--已经注册-->
+            <div class="rank-sign rules-top5 rules-relative" id="sign2" style="display: none">
+                <img src="img/rank-sign.png" alt="注册">
+                <div class="con4 rules-ab" id="myrank">
+                    <ul class="con3" id="con3">
+                        <li>
+                            <span class="myself">我当前的排名</span>
+                            <span class="myrank" id="myRanks"></span>
+
+                        </li>
+                        <li>
+                            <span class="myself">投资额度</span>
+                            <span class="mymoney" id="myMoney"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rank-name rules-top5">
+                <ul>
+                    <li class="rank-names">姓名</li>
+                    <li class="rank-phones">电话</li>
+                    <li class="rank-amounts">投资额度</li>
+                </ul>
+            </div>
+            <div class="for-rank">
+
+                <div class="con1">
+                    <ul class="con2" id="con2">
+                        <li>
+                            <span class="topranks"><img src="img/top1.png"> </span>
+                            <span class="topname"></span>
+                            <span class="topphone"></span>
+                            <span class="topmoney"></span>
+                        </li>
+                        <li>
+                            <span class="topranks"><img src="img/top2.png"></span>
+                            <span class="topname"></span>
+                            <span class="topphone"></span>
+                            <span class="topmoney"></span>
+                        </li>
+                        <li>
+                            <span class="topranks"><img src="img/top3.png"></span>
+                            <span class="topname"></span>
+                            <span class="topphone"></span>
+                            <span class="topmoney"></span>
+                        </li>
+                    </ul>
+                </div>
+                <object data="rank.html" class="conbox"></object>
+            </div>
+            <div class="rank-end">
+                <img src="img/rank-end.png" alt="榜上有名"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shareF" class="rules-fixed" style="display: none">
+    <img src="img/shareF.png" alt="分享到朋友圈">
+</div>
+<div class="error rules-fixed rules-center" id="error">
+</div>
+<script src="js/womenday.js">
+
+</script>
+<script type="text/javascript">
+    $(".act-one").click(function(){
+        location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.gongshidai.mistGSD"
+    })
+    $(function(){
+
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+i,
+em,
+pre,
+option,
+p {
+    margin: 0;
+    padding: 0;
+}
+body *,
+body *:after,
+body *:before {
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', tahoma, '宋体', Helvetica, STHeiti, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+html {
+    font-size: 62.5%;
+}
+body,
+input,
+select,
+textarea,
+a,
+pre {
+    outline: none;
+    line-height: 1;
+    border: 0;
+}
+img {
+    border: none;
+}
+em,
+i {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+ul,
+li {
+    list-style-type: none;
+}
+a img,
+:link img,
+:visited img {
+    border: 0px;
+}
+strong{
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1440557752_6062617.eot');
+    /* IE9*/
+    src: url('//at.alicdn.com/t/font_1440557752_6062617.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1440557752_6062617.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1440557752_6062617.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1440557752_6062617.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    clear: both;
+}
+.rules-mtop{
+    margin: 20px 0;
+}
+.rules-top5{
+    margin-top:-10px;
+}
+.rules-relative{
+    position: relative;
+}
+.rules-ab{
+    position:absolute;
+}
+.rules-fixed{
+    position: fixed;
+}
+.rules-block{
+    display: block;
+}
+.rules-black{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.rules-center{
+    text-align: center;
+}
+.rules-in{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/*滚动css*/
+body{
+    background:url("../img/pinkbg.png") repeat-y left top;
+    background-size: 100% auto;background-color:#fe6d87;
+    font-family: "宋体";
+}
+
+.bgImg .titleImg img,.bgImg .conImg img,.bgImg .endImg img{
+    width: 100%;
+}
+/*输入手机号码判断是否注册*/
+.phone-sign img{
+    width: 100% ;
+}
+.phone-sign{
+    padding: 20% 2%;
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0,0.8);
+    z-index: 999;
+}
+.phone-sign .phonebtn{
+    width: 100%;
+}
+.phone-sign .phonebtn .inputbox{
+    bottom: 15%;
+    width: 78%;
+}
+.phone-sign .phonebtn .inputbox input{
+    width: 100%;
+    line-height: 45px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-top: 10px;
+}
+.phone-sign .phonebtn .inputbox input:nth-of-type(1){
+    background-color: #ffd4e0;
+    color: #fb6b88;
+    -webkit-box-shadow: 0 3px 0 #f47c9c;
+    -moz-box-shadow: 0 3px 0 #f47c9c;
+    box-shadow: 0 3px 0 #f47c9c;
+    font-size:18px;
+}
+.phone-sign .phonebtn .inputbox input:nth-of-type(2){
+    background:url("../img/phoneNum-inp.png") no-repeat center center;
+    background-size: 45%;
+    background-color: #f9355b;
+    -webkit-box-shadow: 0 3px 0 #981f3e;
+    -moz-box-shadow: 0 3px 0 #981f3e;
+    box-shadow: 0 3px 0 #981f3e;
+}
+
+.phone-text::-webkit-input-placeholder{
+    color: #fb6b88;
+    font-size:18px;
+}
+.bgImg .conImg{
+    width: 100%;
+    padding-top: 20px;
+}
+.bgImg .conImg p{
+    color: #e6e6e6;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    margin:5px 0 20px 0;
+    font-size: 12px;
+}
+
+.bgImg .conImg div .rules-inp{
+    width: 70%;
+    bottom: 7%;
+    height: 80px;
+}
+.bgImg .conImg div .rules-inp img{
+    width: 100%;
+}
+.bgImg .endImg p{
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    font-size: 14px;
+    color: #f9355b;
+    bottom: 50%;
+    font-family:"微软雅黑" ;
+    border-bottom: 1px solid #f9355b;
+}
+
+.bgImg .toprank{
+    line-height: 20px;
+    top: 0;
+    padding-top: 80px;
+}
+.rank-title{
+    width: 100%;
+}
+.bgImg .toprank .rank-title .rank-t,.bgImg .toprank .rank-end img{
+    width: 100%;
+}
+.rank-title .closebtn{
+    width: 10%;
+    top: -20%;
+    right: 3%;
+}
+.rank-title .closebtn img{
+    width: 100%;
+}
+.phone-sign .closebtn{
+    width: 10%;
+    top: -10%;
+    right: 3%;
+}
+.phone-sign .closebtn img{
+    width: 100%;
+}
+.bgImg .toprank{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index:999;
+}
+#ranks{
+    width: 95%;
+    padding-left: 5%;
+}
+.bgImg .toprank .rank-sign img:nth-of-type(1){
+    width: 100%;
+}
+.bgImg .toprank .rank-sign img:nth-of-type(2){
+    width: 50%;
+    top: 20%;
+}
+.act-three{
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 100%;
+}
+.act-three .erweima{
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    opacity: 0;
+    top: 20px;
+}
+.act-three .move{
+    opacity: 1;
+}
+.bgImg .toprank .rank-name{
+    background: url("../img/rank-name.png") no-repeat left top;
+}
+.bgImg .toprank .for-rank{
+    background: url("../img/for-rank.png") no-repeat left top;
+    width: 100%;
+    background-size: 100% 100%;
+    margin-top: 0;
+}
+.bgImg .toprank .rank-sign,.bgImg .toprank .rank-name{
+    width: 100%;
+    background-size: 100%;
+}
+.bgImg .toprank .rank-name ul li{
+    width: 32%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.bgImg .toprank .for-rank .con1 ul li span,.bgImg .toprank .rank-name ul li,.con ul li span,.con4 ul li{
+    color: #ee3f60;
+    font-size: 14px;
+    display:inline-block;
+}
+.con ul li .rank{
+    font-weight: bold;
+}
+.con{
+    height: 300px;
+    overflow: hidden;
+}
+.bgImg .toprank .for-rank .con1 ul li span,.con ul li span{
+    line-height: 28px;
+}
+.bgImg .toprank .for-rank .con1 ul li .topranks,.con ul li .rank{
+    width: 10%;
+    text-align:right;
+}
+.bgImg .toprank .for-rank .con1 ul li .topname,.con ul li .name{
+    width: 15%;
+    text-indent:5px;
+}
+.bgImg .toprank .for-rank .con1 ul li .topphone,.bgImg .toprank .for-rank .con1 ul li .topmoney,.con ul li .phone{
+    width: 38%;
+    text-align: center;
+}
+.bgImg .toprank .for-rank .con1 ul li .topmoney,.con ul li .money{
+    width: 30%;
+    text-align: center;
+}
+.con4{
+    width: 100%;
+    top: 25%;
+}
+.con4 ul li{
+    width: 48%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+.con4 ul li .myrank{
+    font-weight: bold;
+    font-size: 24px;
+}
+.con1 .topranks img{
+    width: 60%;
+}
+.conbox{
+    padding-bottom: 20px;
+    height: 160px;
+    overflow: hidden;
+    width: 100%;
+}
+@media only screen and (max-width: 321px) {
+    .bgImg .toprank .for-rank{
+        margin-top: -12px;
+    }
+    .rank-end{
+        margin-top: 0;
+    }
+    .phone-sign .phonebtn .inputbox input{
+        line-height: 35px;
+    }
+    .rules-mtop{
+        margin: 10px 0;
+    }
+    .bgImg .conImg div .rules-inp{
+        height: 35px;
+    }
+    .con4 ul li{
+        font-size: 14px;
+    }
+    .con4 ul li .myrank{
+        font-size: 20px;
+    }
+    .bgImg .conImg div .rules-inp{
+        bottom: 25%;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width:400px){
+    .phone-sign .phonebtn .inputbox input{
+        line-height: 43px;
+    }
+    .bgImg .toprank .for-rank{
+        margin-top: -8px;
+    }
+    .bgImg .conImg div .rules-inp{
+        bottom: 7%;
+    }
+
+}
+.error{
+    z-index: 999;
+    line-height: 24px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0,0,0.8);
+    color: #f5f5f5;
+    font-size: 14px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#shareF{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+}
+#shareF img{
+    width: 100%;
+}
+.act-one a{
+    z-index: 499;
+}
+#shareF{
+    z-index:999;
+}

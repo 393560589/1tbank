@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <script type="text/javascript">
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth / 640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+
+    </script>
+    <title>新手注册直送20000元!</title>
+    <link rel="stylesheet" href="css/resetrules.css" type="text/css">
+    <link rel="stylesheet" href="css/sign.css" type="text/css">
+    <script src="js/z.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+</head>
+<body style="background-color: #5904af">
+<div class="">
+    <div class="signinp rules-relative">
+        <div class="sign-ab rules-ab rules-in">
+            <div>
+                <input type="text" placeholder="请输入手机号" maxlength="11" id="phoneNum"/>
+            </div>
+            <div>
+                <input type="password" placeholder="请设置登陆密码" id="pwd" maxlength="20">
+            </div>
+            <div class="getcode">
+                <input type="text" placeholder="请输入验证码" class="rules-block codeval" id="writecode" maxlength="4">
+                <input type="button" value="发送验证码" class="rules-block" id="getcode">
+            </div>
+            <a href="javascript:void(0)" class="rules-block sign-now" id="sign-now"><!--立即注册--></a>
+        </div>
+    </div>
+    <div class="rules-relative signbanner">
+        <img src="img/img2.png" alt="">
+        <i class="rules-ab rules-in">
+            <img src="img/arrowbottom.png"/>
+        </i>
+    </div>
+</div>
+<div class="error rules-fixed rules-center" id="error">
+
+</div>
+<script src="js/sign.js"></script>
+</body>
+</html>

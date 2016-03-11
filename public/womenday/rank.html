@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/womenday.css" type="text/css">
+    <script src="js/z.js"></script>
+</head>
+<body style="background: none">
+<div class="con" id="con">
+        <ul id="con1" class="con1">
+
+        </ul>
+    <ul id="con2" class="con1">
+
+    </ul>
+</div>
+<script src="js/womenday.js"></script>
+<script>
+    function move() {
+        var area = document.getElementById('con');
+        var con1 = document.getElementById('con1');
+        var con2 = document.getElementById('con2');
+        var speed = 40;
+        area.scrollTop = 0;
+        con2.innerHTML = con1.innerHTML;
+        function move2() {
+            if (area.scrollTop >= con1.scrollHeight) {
+                area.scrollTop = 0;
+            } else {
+                area.scrollTop++;
+            }
+        }
+
+        var myScroll = setInterval(move2, speed);
+    }
+
+    $(function(){
+
+        var r={
+            rankArray:[],
+            nameArray:[],
+            phoneArray:[],
+            moneyArray:[]
+        }
+        $.ajax({
+            url:"https://licai.gongshidai.com/v3_1/wlist",
+            type:"get",
+            async:false,
+            success:function(data){
+                for(var i=0;i<data.list.length;i++){
+                    r.nameArray.push(data.list[i].realname)
+                    r.phoneArray.push(data.list[i].phone)
+                    r.moneyArray.push(data.list[i].amounts)
+                    r.rankArray.push(data.list[i].ph)
+
+                }
+            },
+            error:function(){}
+        });
+        console.log(r.nameArray.length)
+        for(var i=3;i< r.nameArray.length;i++){
+            $("#con1").append(" <li> <span class='rank'></span> <span class='name'></span> <span class='phone'></span><span class='money'></span> </li>");
+
+        }
+        r.rank = $("#con1 .rank");
+        r.name = $("#con1 .name");
+        r.phone = $("#con1 .phone");
+        r.money = $("#con1 .money");
+        console.log(r)
+        for(j=0;j< r.nameArray.length;j++){
+             r.name.eq(j).html(r.nameArray[j+3]);
+             r.phone.eq(j).html(r.phoneArray[j+3]);
+             r.money.eq(j).html(r.moneyArray[j+3]);
+             r.rank.eq(j).html(r.rankArray[j+3]);
+        }
+        console.log(r.name)
+        move()
+    })
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

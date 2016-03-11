@@ -1,0 +1,138 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+i,
+em,
+pre,
+option,
+p {
+    margin: 0;
+    padding: 0;
+}
+body *,
+body *:after,
+body *:before {
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', tahoma, '宋体', Helvetica, STHeiti, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+html {
+    font-size: 62.5%;
+}
+body,
+input,
+select,
+textarea,
+a,
+pre {
+    outline: none;
+    line-height: 1;
+    border: 0;
+}
+img {
+    border: none;
+}
+em,
+i {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+ul,
+li {
+    list-style-type: none;
+}
+a img,
+:link img,
+:visited img {
+    border: 0px;
+}
+strong{
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1440557752_6062617.eot');
+    /* IE9*/
+    src: url('//at.alicdn.com/t/font_1440557752_6062617.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1440557752_6062617.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1440557752_6062617.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1440557752_6062617.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    clear: both;
+}
+.rules-mtop{
+    margin: 20px 0;
+}
+.rules-top5{
+    margin-top:-2px;
+}
+.rules-relative{
+    position: relative;
+}
+.rules-ab{
+    position:absolute;
+}
+.rules-fixed{
+    position: fixed;
+}
+.rules-block{
+    display: inline-block;
+}
+.rules-black{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.rules-center{
+    text-align: center;
+}
+.rules-in{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.error{
+    z-index: 999;
+    line-height: 30px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0,0,0.8);
+    color: #f5f5f5;
+    font-size: 18px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,78 @@
+.signinp{
+    height: 885px;
+    background: url("../img/img1.png") no-repeat top left;
+    background-size: 100% auto;
+}
+.signbanner i{
+    top: 145px;
+}
+.signinp .sign-ab{
+    bottom: 48px;
+}
+.signinp .sign-ab div{
+    margin-top: 25px;
+    background:rgba(255,255,255,0.4);
+    width: 462px;
+    height: 72px;
+    -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.25) inset;
+    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.25) inset;
+    box-shadow: 0 -2px 0 rgba(0,0,0,0.25) inset;
+    padding:8px 10px ;
+}
+#pwd{
+    width: 100%;
+}
+.signinp .sign-ab .getcode .codeval{
+    width: 70%;
+    border-right: 1px solid white;
+    height: 55px;
+}
+.signinp .sign-ab .getcode #getcode{
+    width: 25%;
+    padding-left: 5px;color: #f9d98a;
+    letter-spacing: 0;
+}
+.signinp .sign-ab input{
+    background: none;
+    font-size: 20px;
+    line-height: 55px;
+    letter-spacing: 3px;
+}
+.signinp .sign-ab input::-webkit-input-placeholder,.signinp .sign-ab input{
+    color: white;
+}
+.signinp .sign-ab div,.signinp .sign-ab a{
+    width: 462px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+.signinp .sign-ab a{
+    background: url("../img/sign-now.png") no-repeat center center;
+}
+.signinp .sign-ab a{
+    margin-top: 30px;
+    height: 80px;
+    background-color: #24d2e2;
+    -webkit-box-shadow: 0 -5px 0 #366e98;
+    -moz-box-shadow: 0 -5px 0 #366e98;
+    box-shadow: 0 -5px 0 #366e98;
+}
+.bg{
+    width: 640px;
+    height: 1134px;
+    background: url("../img/download.png") no-repeat left center;
+}
+.bg .download{
+    width: 462px;
+    height: 80px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    -webkit-box-shadow: 0 -5px 0 #366e98;
+    -moz-box-shadow: 0 -5px 0 #366e98;
+    box-shadow: 0 -5px 0 #366e98;
+    background: url("../img/downloadbtn.png") no-repeat center center;
+    bottom: 220px;
+    background-color: #24d2e2;
+}
