@@ -89,7 +89,7 @@ $(function(){
                     }else{
                         window.location.href = ""
                     }
-
+/**/
                 }else if (data.code == 10011){
                     $("#error").html("验证码错误!");
                     showDialog(error);
